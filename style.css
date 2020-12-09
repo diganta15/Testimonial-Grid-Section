@@ -1,12 +1,12 @@
 .showcase{
     display: flex;
     justify-content: space-between;
-    margin-top: 4rem;
+    /* margin-top: 4rem;
     margin-right: 4rem;
-    margin-left: 4rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    padding-top: 3rem;
+    margin-left: 4rem; */
+    padding-right: 8rem;
+    padding-left: 8rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
     background-color: hsl(210, 46%, 95%);
     
@@ -97,4 +97,27 @@
 }
 .review{
     opacity: 70%;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .showcase{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .showcase-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .showcase-right{
+        padding: 20px;
+    }
+    #p5{
+        height: 16rem;
+        
+        margin-bottom: 10px;
+    }
+    .review{
+        padding-bottom: 5px;
+    }
 }
